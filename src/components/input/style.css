@@ -1,0 +1,36 @@
+.input__container {
+    @apply
+    flex 
+    bg-blue-500
+    mt-8
+    rounded-lg 
+    text-white 
+    w-80 
+    h-10 
+    p-2
+    justify-center 
+    items-center 
+    gap-4
+    border-2
+    border-white
+    shadow-lg
+}
+
+.input__tag {
+    @apply
+    bg-gray-100 
+    text-gray-600 
+    py-1 
+    px-4 
+}
+
+.input__action-container {
+    @apply
+    flex 
+    gap-4
+}
+
+.input__action {
+    @apply
+    cursor-pointer 
+}

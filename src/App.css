@@ -1,38 +1,126 @@
-.App {
-  text-align: center;
-}
+/* import css files */
+@import "./components/style.css";
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* import vazir font */
+@import url('https://v1.fontapi.ir/css/Vazir');
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* tailwind css files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+
+  .right--6 {
+    right: -3.5rem 
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .ml-2px {
+    margin-left: 2px
   }
-  to {
-    transform: rotate(360deg);
+
+  .z-999 {
+    z-index: 999;
   }
+
+  .z-1 {
+    z-index: 1;
+  }
+
+  .left_-12{
+    left: -3rem;
+  }
+
+  .content-empty {
+    content: ''
+  }
+  .top_-4{
+    top: -1rem;
+  }
+
+  .bottom_-4 {
+    bottom: -1rem;
+  }
+
+  .h-inherit {
+    height: inherit;
+  }
+
+  .font-vazir {
+    font-family: vazir
+  } 
+}
+
+@layer components { 
+   .div-rounded > div {
+     @apply
+     rounded-lg
+   }
+}
+
+.before::before {
+  @apply
+  absolute
+  rounded-lg
+  shadow-lg
+  z-1
+  h-inherit
+  w-48
+  border-white
+  border-2
+  box-content
+  bg-blue-500
+  top_-4
+  bottom_-4
+  h-inherit
+  content-empty
+}
+
+.main {
+  @apply
+  relative
+  bg-gray-200
+  font-vazir 
+}
+
+.menu-container {
+  @apply
+  w-full 
+  min-h-screen 
+  py-8 
+  px-12 
+  flex 
+  flex-col 
+  gap-8
+}
+
+.add-component {
+  @apply
+  text-gray-100 
+  bg-blue-500 
+  hover:bg-blue-400 
+  rounded-lg 
+  w-48 
+  flex 
+  justify-center 
+  items-center 
+  h-12 
+  mb-4 
+  text-sm 
+  gap-4
+  border-2
+  border-white
+  shadow-lg
+  cursor-pointer
+  relative
+  z-50
+}
+
+.input {
+  @apply
+  w-full
+  flex
+  justify-center
+  items-start
+  top-0
 }

@@ -1,0 +1,21 @@
+.menu__ul {
+    @apply
+    text-gray-100 
+    before
+    w-56
+    relative
+    z-30
+}
+
+.no-data-container {
+    @apply
+    bg-blue-500 
+    flex 
+    justify-center 
+    items-center 
+    w-48 h-12 
+    rounded-lg 
+    border-2 
+    text-white 
+    border-white
+}

@@ -1,0 +1,52 @@
+.ul__li-action-container{
+    @apply
+    flex 
+    gap-4 
+    px-4
+    items-center 
+    relative
+    z-30
+}
+
+.ul__li-icons-container {
+    @apply
+    flex 
+    gap-4 
+    items-center
+}
+
+.ul__li-item {
+    @apply
+    w-28
+}
+
+.ul__add-icon-container {
+    @apply
+    cursor-pointer
+}
+
+.ul__add-icon-container:hover .ul__li-actions-wrapper {
+    @apply
+    block
+}
+
+.ul__li-actions-wrapper {
+    @apply
+    hidden
+    absolute
+    top-0
+    left_-12
+    z-999
+    
+}
+
+.ul__li-actions{
+    @apply
+    flex 
+    gap-2 
+    p-2 
+    rounded-lg 
+    bg-blue-600 
+    border 
+    border-white
+}

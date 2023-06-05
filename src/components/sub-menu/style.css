@@ -1,0 +1,43 @@
+.menu__ul--sub-ul {
+    @apply
+    absolute 
+    left-56 
+    top-0
+}
+
+.ul__li--submenu-full{
+    @apply
+    relative 
+    w-56 
+    flex
+    z-30
+}
+
+.ul__li-cover {
+    @apply
+    w-48
+    hover:bg-blue-400 
+    h-8 
+    flex 
+    items-center 
+    hover:rounded-lg
+    ml-2px
+}
+
+.ul__li--submenu-less{
+    @apply
+    flex 
+    gap-4 
+    items-center 
+    w-48
+    h-8
+}
+
+.ul__li--submenu-less-action-container{
+    @apply
+    hover:rounded-lg 
+    hover:bg-blue-400 
+    ml-2px
+    h-8
+    w-48
+}
