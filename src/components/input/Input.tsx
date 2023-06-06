@@ -1,7 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faCheck, faClose } from '@fortawesome/free-solid-svg-icons'
 import type { InputProps } from "../../types"
-import { useRef } from "react"
 
 /**
  *  Input commponent
